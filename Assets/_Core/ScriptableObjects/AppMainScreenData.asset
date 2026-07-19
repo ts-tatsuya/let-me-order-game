@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AppMainScreenData
   serviceMenus:
   - title: test
-    image: {fileID: 0}
+    image: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   - title: wow
-    image: {fileID: 0}
+    image: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   - title: tralla
-    image: {fileID: 0}
+    image: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   - title: oh no
-    image: {fileID: 0}
+    image: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   - title: zzz
-    image: {fileID: 0}
+    image: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   tabBarMenus: []

@@ -1,7 +1,6 @@
 using TMPro;
 using UnityEngine;
 
-[RequireComponent(typeof(TMP_InputField))]
 public class KeyboardRemapper : MonoBehaviour
 {
     private TMP_InputField inputField;
@@ -14,20 +13,25 @@ public class KeyboardRemapper : MonoBehaviour
     private void Awake()
     {
         inputField = GetComponent<TMP_InputField>();
-        inputField.onValidateInput = ValidateInput;
+        if (inputField != null)
+        {
+            inputField.onValidateInput = ValidateInput;
+        }
+    }
+
+    public char Remap(char value)
+    {
+        bool isUpper = char.IsUpper(value);
+        char lower = char.ToLowerInvariant(value);
+
+        char mapped = ShiftRight(lower);
+
+        return isUpper ? char.ToUpperInvariant(mapped) : mapped;
     }
 
     private char ValidateInput(string text, int charIndex, char addedChar)
     {
-        bool isUpper = char.IsUpper(addedChar);
-        char lower = char.ToLower(addedChar);
-
-        char mapped = ShiftRight(lower);
-
-        if (isUpper)
-            mapped = char.ToUpper(mapped);
-
-        return mapped;
+        return Remap(addedChar);
     }
 
     private char ShiftRight(char c)
