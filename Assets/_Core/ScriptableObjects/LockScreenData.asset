@@ -15,7 +15,7 @@ MonoBehaviour:
   background: {fileID: -8555742525656203810, guid: eeaf24d499b894d17a7566bd3d89400e, type: 3}
   notifications:
   - chatName: Babe
-    chatDesc: New Text Message
+    chatDesc: New Incoming Message
     potrait: {fileID: 6192944022281365145, guid: 7d8823628278048b886ec8f069809870, type: 3}
   - chatName: Grub
     chatDesc: New Notification

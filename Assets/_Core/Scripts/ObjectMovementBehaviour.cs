@@ -21,7 +21,8 @@ public class ObjectMovementBehaviour : MonoBehaviour
             return;
         }
         _isExecuting = true;
-        GetComponent<Button>().interactable = false;
+        _currentIndex++;
+        // GetComponent<Button>().interactable = false;
     }
 
     private void Start()
@@ -38,7 +39,7 @@ public class ObjectMovementBehaviour : MonoBehaviour
 
     private void Update()
     {
-        if (_isExecuting)
+        if (_isExecuting && _currentIndex < _waypoints.Length)
         {
             MoveObject();
         }
@@ -55,8 +56,8 @@ public class ObjectMovementBehaviour : MonoBehaviour
         if (transform.position == _waypoints[_currentIndex].position && _isExecuting == true)
         {
             _isExecuting = false;
-            GetComponent<Button>().interactable = true;
-            _currentIndex++;
+            // GetComponent<Button>().interactable = true;
+
         }
     }
 }

@@ -37,9 +37,11 @@ public class PINController : MonoBehaviour
 
     private void TypePIN(String pin)
     {
+
         if (_pin.Length < 5)
         {
             _pin += pin;
+            _pinText.text += ".";
         }
         else
         {
@@ -50,9 +52,10 @@ public class PINController : MonoBehaviour
             }
 
             _pin = "";
+            _pinText.text = "";
 
         }
         Debug.Log(_pin);
-        _pinText.text = _pin;
+
     }
 }
