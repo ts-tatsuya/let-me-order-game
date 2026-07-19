@@ -34,9 +34,10 @@ public class ChatAppScreenData : ScriptableObject
     public ChatItemData[] chatItems;
 }
 
+[Serializable]
 public struct ChatItemData
 {
     public String chatName;
     public String chatDesc;
-    public Sprite potrait;
+    public Texture2D potrait;
 }

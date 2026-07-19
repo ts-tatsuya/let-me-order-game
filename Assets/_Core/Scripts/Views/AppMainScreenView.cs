@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AppMainScreenView : MonoBehaviour
+public class AppMainScreenView : PhoneScreenBase
 {
     [SerializeField]
     private AppMainScreenData _appMainScreenData;
@@ -24,7 +24,7 @@ public class AppMainScreenView : MonoBehaviour
 
     }
 
-    private void Init()
+    public override void Init()
     {
         for (int i = 0; i < _appMainScreenData.serviceMenus.Length; i++)
         {
@@ -36,6 +36,25 @@ public class AppMainScreenView : MonoBehaviour
             _tabBarMenus[i].GetComponent<Image>().sprite = _appMainScreenData.tabBarMenus[i].image;
             _tabBarMenus[i].GetComponentInChildren<TextMeshProUGUI>().text = _appMainScreenData.tabBarMenus[i].title;
         }
+    }
+
+    public override void InitScreen(ScriptableObject scriptableObject)
+    {
+        if (scriptableObject is AppMainScreenData data)
+        {
+            _appMainScreenData = data;
+        }
+        Init();
+    }
+
+    public override void InitScreen()
+    {
+        Init();
+    }
+
+    public override GameObject GetGameObject()
+    {
+        return gameObject;
     }
 }
 

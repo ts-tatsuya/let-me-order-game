@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: LockScreenData
+  m_EditorClassIdentifier: Assembly-CSharp::LockScreenData
+  background: {fileID: -8555742525656203810, guid: eeaf24d499b894d17a7566bd3d89400e, type: 3}
+  notifications:
+  - chatName: Babe
+    chatDesc: New Text Message
+    potrait: {fileID: 6192944022281365145, guid: 7d8823628278048b886ec8f069809870, type: 3}
+  - chatName: Grub
+    chatDesc: New Notification
+    potrait: {fileID: 6192944022281365145, guid: 676f606a5cb4943148a8a807692e0671, type: 3}

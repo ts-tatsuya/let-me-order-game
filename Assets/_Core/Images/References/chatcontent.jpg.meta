@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e70988a5653cd554291318b17d17d599
+guid: 96cbda706d88bd14bbe3f3fa7d072693
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6116058755252793876
-    second: delivery_0
+      213: -280280733097512184
+    second: chatcontent_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,17 +122,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: delivery_0
+      name: chatcontent_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1366
-        height: 2883
+        width: 131
+        height: 284
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ced4db367f46f1ba0800000000000000
-      internalID: -6116058755252793876
+      spriteID: 8033652882e3c1cf0800000000000000
+      internalID: -280280733097512184
       vertices: []
       indices: 
       edges: []
@@ -161,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      delivery_0: -6116058755252793876
+      chatcontent_0: -280280733097512184
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

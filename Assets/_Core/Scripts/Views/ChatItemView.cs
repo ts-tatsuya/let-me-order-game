@@ -6,15 +6,15 @@ using UnityEngine.UI;
 public class ChatItemView : MonoBehaviour
 {
     [SerializeField]
-    private Image _potraitImage;
+    private RawImage _potraitImage;
     [SerializeField]
     private TextMeshProUGUI _chatNameText;
     [SerializeField]
     private TextMeshProUGUI _chatDescText;
 
-    public void Init(Sprite potrait, String chatName, String chatDesc)
+    public void Init(Texture2D potrait, String chatName, String chatDesc)
     {
-        _potraitImage.sprite = potrait;
+        _potraitImage.texture = potrait;
         _chatNameText.text = chatName;
         _chatDescText.text = chatDesc;
     }
